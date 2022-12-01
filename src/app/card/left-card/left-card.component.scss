@@ -1,0 +1,46 @@
+.left-card {
+    width: 100%;
+    margin-top: 50px;
+    .img-wrapper {
+        display: flex;
+
+        .avatar {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 10px solid black;
+            overflow: hidden;
+            object-fit: cover;
+            margin: auto;
+        }
+    }
+
+    .name {
+        font-size: 40px;
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .information {
+        margin: 20px 0 0 90px;
+
+        .information-form {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+
+            .subject {
+                font-weight: bold;
+            }
+
+            .DOB-value {
+                margin-left: 10px;
+            }
+            .address-value{
+                margin-left: 10px;
+
+            }
+        }
+    }
+}
