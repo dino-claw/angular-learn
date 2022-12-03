@@ -1,6 +1,7 @@
 .left-card {
     width: 100%;
     margin-top: 50px;
+
     .img-wrapper {
         display: flex;
 
@@ -8,7 +9,7 @@
             width: 220px;
             height: 220px;
             border-radius: 50%;
-            border: 10px solid black;
+            // border: 10px solid black;
             overflow: hidden;
             object-fit: cover;
             margin: auto;
@@ -17,9 +18,16 @@
 
     .name {
         font-size: 40px;
-        font-family: 'Work Sans', sans-serif;
+        font-family: Raleway;
         text-align: center;
         margin: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        word-break: break-all;
+        color: #3e3e3e;
+        line-height: 1.68;
+        letter-spacing: 5px;
+        word-break: normal;
     }
 
     .information {
@@ -37,7 +45,8 @@
             .DOB-value {
                 margin-left: 10px;
             }
-            .address-value{
+
+            .address-value {
                 margin-left: 10px;
 
             }

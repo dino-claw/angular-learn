@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "landingpage-a8244"
+  },
+  "targets": {
+    "landingpage-a8244": {
+      "hosting": {
+        "app": [
+          "resume-4200"
+        ]
+      }
+    }
+  }
+}

@@ -1,10 +1,63 @@
 .right-card {
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
     border-left: 3px solid #363437;
     padding-left: 20px;
+    padding-right: 20px;
 
-    .title {
-        width: 100%;
+    .part {
+        .title {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            font-size: 25px;
+            line-height: 40px;
+            font-family: Raleway;
+            font-weight: lighter;
+            text-transform: uppercase;
+            word-break: break-all;
+            color: #3e3e3e;
+            letter-spacing: 7px;
+            word-break: normal;
+        }
+
+        .point::before {
+            content: "";
+            position: absolute;
+            background-color: #a37088;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            align-items: center;
+            text-align: center;
+            transform: translate(-28.5px, calc(60% + 3.5px));
+        }
+
+        .time-part {
+            display: flex;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+            .time {
+                font-weight: 600;
+                font-size: 20px;
+                width: 25%;
+            }
+
+            .content-wrapper {
+                width: 75%;
+
+                .subject-time-part {}
+
+                .content-time-part {
+                    color: gray;
+                }
+            }
+        }
+
+        .content {
+            margin-left: 10px;
+        }
+
     }
 }
 
@@ -27,5 +80,6 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    margin-left: -28.5px;
+    transform: translate(-28.5px, calc(-60% - 3.5px));
+
 }

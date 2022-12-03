@@ -1,0 +1,8 @@
+<canvas #canvas id="canvas" style="height: 100%; width: 100%;" 
+></canvas>
+<div class="hidden-control" #hiddencontrol >
+    <div>x: <input type="number" #valuex value='-3'(change)="onChange() "></div>
+    <div>y: <input type="number" #valuey value='2'(change)="onChange()"></div>
+    <div>z: <input type="number" #valuez value='1'(change)="onChange()"></div>
+    <button (click)="stop()" class="stopBtn"#stopBtn>Stop</button>
+</div>

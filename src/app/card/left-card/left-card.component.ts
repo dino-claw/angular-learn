@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { PlaneGeometry } from 'three';
 
 @Component({
   selector: 'left-card',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class LeftCardComponent {
 
+  
 }

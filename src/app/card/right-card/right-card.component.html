@@ -1,14 +1,27 @@
 <div class="right-card">
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
-    <div class="title">ABOUT ME</div>
-    <div class="content">asdjasdklasdj asdljlas djlasj dlasj dkl</div>
+    <div class="part" *ngFor="let data of listData">
+        <div class="title" [ngClass]="{'point': data.id > 1 }">{{data.title}}</div>
+        <ng-container *ngIf="!data.haveTime">
+            <div class="content" *ngFor="let value of data.content" style="margin-bottom: 10px;">
+                {{value}}
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="data.haveTime">
+            <div class="time-part" *ngFor="let content of data.content">
+                <div class="time">
+                    {{content.time}}
+                </div>
+                <div class="content-wrapper">
+                    <div class="subject-time-part">
+                        {{content.subject}}
+                    </div>
+                    <div class="content-time-part" *ngFor="let value of content.content">
+                        {{value}}
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
 </div>

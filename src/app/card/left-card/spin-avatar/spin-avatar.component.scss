@@ -1,0 +1,12 @@
+
+.hidden-control{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    padding:10px;
+    border: 1px solid #3e3e3e;
+    input{
+        width: 50px;
+    }
+}
